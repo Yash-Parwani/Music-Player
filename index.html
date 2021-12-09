@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Music Player</title>
+  <script src="https://kit.fontawesome.com/53122cc231.js" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets.css">
+  <link rel="icon" href="assets/music-player-logo.png" type="image/png" sizes="32X32">
+</head>
+
+<body>
+  <section id="main-display" style="display:flex; flex-direction: column;">
+    <header>
+      <!--nav bar-->
+
+      <section class="nav-bar">
+        <div class="nav-bar-left">
+          <ul>
+           
+            <li id="favourites">
+              <a href="single_playlist_screen.html">
+                <p>Favourites</p>
+              </a>
+            </li>
+            <li >
+              <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" name="search" placeholder="Search">
+                <i class="fas fa-microphone"></i>
+              </div>
+            </li>
+
+
+
+
+
+            <li id="bell">
+              <i class="far fa-bell"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-bar-right">
+          <ul>
+            <li>
+              <div class="logotext">
+                <a href="index.html">
+
+
+                  <img src="assets/music-player-logo.png" id="logo">
+
+                  <p>Music Player</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+      </section>
+      
+
+      <!--main carousel-->
+      <section id="main-carousel">
+        <ul id="main-carousel-list" class="horizontal-list">
+          <li><img src="assets/terabaapaaya.jpg" class="main-carousel-img"> </li>
+          <li><img src="assets/hows the josh.jpg" class="main-carousel-img"> </li>
+          <li><img src="assets/behchala.jpg" class="main-carousel-img"> </li>
+        </ul>
+      </section>
+    </header>
+
+    <main id="main-display" style="display:flex; ">
+      <section id="caricatures">
+        <img class="user-image" src="assets/user.jpg">
+      </section>
+      <section id="songs-display">
+        
+
+        <!--latest releases section-->
+        <section id="latest-releases" class="section-properties">
+          <div class="section-header">
+            <h3>latest releases</h3>
+          </div>
+          <div class="music-display-container">
+            <div class="music-card">
+              <div class="music-card-img">
+                <div class="playbutton-container">
+                  <a href="#latest-shivers"><i class="fas fa-play fa-3x play-button"></i></a>
+                </div>
+              </div>
+              <div class="music-card-body">
+                <p>Shivers</p>
+                <p class="date">October 1,2021</p>
+              </div>
+              <div id ="songs-options-1"class="songs-options">
+                <a href="#options-1"> <i class="fas fa-ellipsis-h fa-sm"></i></a>
+                <div id="options-1" class="options">
+                  <ul>
+                   <li>
+                     <a href="#main">X</a>
+                   </li>
+                    <li>
+                      <span>Play now</span>
+                    </li>
+                    <li>
+                      <span>Add to queue</span>
+                    </li>
+                    <li>
+                      <span>Add to playlist</span>
+                    </li>
+                    <li>
+                      <span>Get info</span>
+                    </li>
+                  </ul>
+                </div> 
+                
+               </div>
+               
+                        
+            
+          </div>
+          <div class="music-card">
+            <div class="music-card-img">
+              <div class="playbutton-container">
+                <a href="#latest-shivers"><i class="fas fa-play fa-3x play-button"></i></a>
+              </div>
+            </div>
+            <div class="music-card-body">
+              <p>Shivers</p>
+              <p class="date">October 1,2021</p>
+            </div>
+            <div id ="songs-options-2"class="songs-options">
+              <a href="#options-2"> <i class="fas fa-ellipsis-h fa-sm"></i></a>
+              <div id="options-2" class="options">
+                <ul>
+                 <li>
+                   <a href="#main">X</a>
+                 </li>
+                  <li>
+                    <span>Play now</span>
+                  </li>
+                  <li>
+                    <span>Add to queue</span>
+                  </li>
+                  <li>
+                    <span>Add to playlist</span>
+                  </li>
+                  <li>
+                    <span>Get info</span>
+                  </li>
+                </ul>
+              </div>
+              
+             </div>
+             
+                        
+          
+        </div>
+        <div class="music-card">
+          <div class="music-card-img">
+            <div class="playbutton-container">
+              <a href="#latest-shivers"><i class="fas fa-play fa-3x play-button"></i></a>
+            </div>
+          </div>
+          <div class="music-card-body">
+            <p>Shivers</p>
+            <p class="date">October 1,2021</p>
+          </div>
+          <div id ="songs-options-3"class="songs-options">
+            <a href="#options-3"> <i class="fas fa-ellipsis-h fa-sm"></i></a>
+            <div id="options-3" class="options">
+              <ul>
+               <li>
+                 <a href="#main">X</a>
+               </li>
+                <li>
+                  <span>Play now</span>
+                </li>
+                <li>
+                  <span>Add to queue</span>
+                </li>
+                <li>
+                  <span>Add to playlist</span>
+                </li>
+                <li>
+                  <span>Get info</span>
+                </li>
+              </ul>
+            </div>
+            
+           </div>
+           
+                      
+        
+      </div>
+      <div class="music-card">
+        <div class="music-card-img">
+          <div class="playbutton-container">
+            <a href="#latest-shivers"><i class="fas fa-play fa-3x play-button"></i></a>
+          </div>
+        </div>
+        <div class="music-card-body">
+          <p>Shivers</p>
+          <p class="date">October 1,2021</p>
+        </div>
+        <div id ="songs-options-4"class="songs-options">
+          <a href="#options-4"> <i class="fas fa-ellipsis-h fa-sm"></i></a>
+          <div id="options-4" class="options">
+            <ul>
+             <li>
+               <a href="#main">X</a>
+             </li>
+              <li>
+                <span>Play now</span>
+              </li>
+              <li>
+                <span>Add to queue</span>
+              </li>
+              <li>
+                <span>Add to playlist</span>
+              </li>
+              <li>
+                <span>Get info</span>
+              </li>
+            </ul>
+          </div>
+          
+         </div>
+         
+                    
+      
+    </div>
+          
+      
+     
+        </section>
+        <!--Popular artists section-->
+        <section class="section-properties">
+          <div class="section-header">
+            <h3>Artists</h3>
+          </div>
+          <div id="popular-artists-bg">
+            <a href="single_playlist_screen.html">
+              <div class="artist-container">
+                <img src="assets/kishorekumar.jpg" class="artists-image">
+                <p>Kishore Kumar</p>
+              </div>
+            </a>
+            <a href="single_playlist_screen.html">
+              <div class="artist-container">
+                <img src="assets/kishorekumar.jpg" class="artists-image">
+                <p>Kishore Kumar</p>
+              </div>
+            </a>
+
+            <a href="single_playlist_screen.html">
+              <div class="artist-container">
+                <img src="assets/kishorekumar.jpg" class="artists-image">
+                <p>Kishore Kumar</p>
+              </div>
+            </a>
+
+            <a href="single_playlist_screen.html">
+              <div class="artist-container">
+                <img src="assets/kishorekumar.jpg" class="artists-image">
+                <p>Kishore Kumar</p>
+              </div>
+            </a>
+
+            <a href="single_playlist_screen.html">
+              <div class="artist-container">
+                <img src="assets/kishorekumar.jpg" class="artists-image">
+                <p>Kishore Kumar</p>
+              </div>
+            </a>
+            <a href="single_playlist_screen.html">
+              <div class="artist-container">
+                <img src="assets/kishorekumar.jpg" class="artists-image">
+                <p>Kishore Kumar</p>
+              </div>
+            </a>
+
+          </div>
+
+        </section>
+        <!--Genre section-->
+        <section class="section-properties">
+          <div class="section-header">
+            <h3>Genre</h3>
+          </div>
+          <div class="genre-bg-properties">
+            <div class="genre-card">
+              <div class="genre-image">
+                <img src="assets/love.jpg">
+                <div class="image-text">
+                  <p>Love</p>
+                </div>
+              </div>
+            </div>
+            <div class="genre-card">
+              <div class="genre-image">
+                <img src="assets/retro.png">
+                <div class="image-text">
+                  <p>Retro</p>
+                </div>
+              </div>
+            </div>
+            <div class="genre-card">
+              <div class="genre-image">
+                <img src="assets/chill.jpg">
+                <div class="image-text">
+                  <p>Rock</p>
+                </div>
+              </div>
+            </div>
+            <div class="genre-card">
+              <div class="genre-image">
+                <img src="assets/rock.jpg">
+                <div class="image-text">
+                  <p>Rock</p>
+                </div>
+              </div>
+            </div>
+            <div class="genre-card">
+              <div class="genre-image">
+                <img src="assets/workout.jpg">
+                <div class="image-text">
+                  <p>Gym</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="genre-bg-properties">
+            <ul class=" horizontal-list" style="width:inherit;display: flex; justify-content: space-around;">
+              <li>
+                <div class="genre-carousel-card"><img class="genre-carousel-img" src="assets/party.jpg"> </div>
+              </li>
+              <li>
+                <div class="genre-carousel-card"><img class="genre-carousel-img" src="assets/electricmusic.jpg"> </div>
+              </li>
+              <li>
+                <div class="genre-carousel-card"><img class="genre-carousel-img" src="assets/roadtrip.jpg"> </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--Latest hindi-->
+        <section class="section-properties">
+          <div class="section-header">
+            <h2>Desi hits</h2>
+          </div>
+          <div class="cards-display">
+            <a href="single_playlist_screen.html">
+              <div class="cards">
+                <div class="card-image">
+                  <img src="assets/neele.jpg" alt="Neele neele ambar par poster">
+                </div>
+                <div class="cards-body">
+                  <p>Kishore Kumar hits </p>
+                  <p class="date">October 19, 2021</p>
+                </div>
+              </div>
+            </a>
+            <a href="single_playlist_screen.html">
+              <div class="cards">
+                <div class="card-image">
+                  <img src="assets/neele.jpg" alt="Neele neele ambar par poster">
+                </div>
+                <div class="cards-body">
+                  <p>Kishore Kumar hits </p>
+                  <p class="date">October 19, 2021</p>
+                </div>
+              </div>
+            </a>
+            <a href="single_playlist_screen.html">
+              <div class="cards">
+                <div class="card-image">
+                  <img src="assets/neele.jpg" alt="Neele neele ambar par poster">
+                </div>
+                <div class="cards-body">
+                  <p>Kishore Kumar hits </p>
+                  <p class="date">October 19, 2021</p>
+                </div>
+              </div>
+            </a>
+            <a href="single_playlist_screen.html">
+              <div class="cards">
+                <div class="card-image">
+                  <img src="assets/neele.jpg" alt="Neele neele ambar par poster">
+                </div>
+                <div class="cards-body">
+                  <p>Kishore Kumar hits </p>
+                  <p class="date">October 19, 2021</p>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </section>
+        <!--Angrezi picks-->
+        <section class="section-properties">
+          <div class="section-header">
+            <h2>Angrezi beats</h2>
+          </div>
+          <div class="cards-display">
+            <a href="single_playlist_screen.html">
+            <div class="cards">
+              <div class="card-image">
+                <img src="assets/shivers.jpg" alt="Neele neele ambar par poster">
+              </div>
+              <div class="cards-body">
+                <p>Ed Sheeran hits </p>
+                <p class="date">October 19, 2021</p>
+              </div>
+            </div>
+            </a>
+            <a href="single_playlist_screen.html">
+              <div class="cards">
+                <div class="card-image">
+                  <img src="assets/shivers.jpg" alt="Neele neele ambar par poster">
+                </div>
+                <div class="cards-body">
+                  <p>Ed Sheeran hits </p>
+                  <p class="date">October 19, 2021</p>
+                </div>
+              </div>
+              </a>
+              <a href="single_playlist_screen.html">
+                <div class="cards">
+                  <div class="card-image">
+                    <img src="assets/shivers.jpg" alt="Neele neele ambar par poster">
+                  </div>
+                  <div class="cards-body">
+                    <p>Ed Sheeran hits </p>
+                    <p class="date">October 19, 2021</p>
+                  </div>
+                </div>
+                </a>
+                <a href="single_playlist_screen.html">
+                  <div class="cards">
+                    <div class="card-image">
+                      <img src="assets/shivers.jpg" alt="Neele neele ambar par poster">
+                    </div>
+                    <div class="cards-body">
+                      <p>Ed Sheeran hits </p>
+                      <p class="date">October 19, 2021</p>
+                    </div>
+                  </div>
+                  </a>
+            
+          </div>
+
+        </section>
+      </section>
+      <!--Queue section-->
+      <section id="queue-section">
+        <aside id="queue">
+          <div id="queue-header">
+            <div class="section-header">
+              <h3>My playlist</h3>
+
+              <!--Queue Dropdown-->
+
+              <div class="dropdown">
+
+              </div>
+            </div>
+          </div>
+          <div class="playlist">
+            <ul>
+              <li><a href="#my-playlist-neele-neele-ambar">
+                  <div class="playlist-card">
+                    <div class="playlist-card-num">
+                      <img src="assets/one (2).png">
+                    </div>
+                    <div class="playlist-card-img">
+                      <img src="assets/neele.jpg">
+                    </div>
+                    <div class="playlist-card-body">
+                      <p>Neele Neele Ambar Par</p>
+                      <p>Kishore Kumar</p>
+                    </div>
+                    <div class="playlist-card-footer">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#my-playlist-shivers">
+                  <div class="playlist-card">
+                    <div class="playlist-card-num">
+                      <img src="assets/two (2).png">
+                    </div>
+                    <div class="playlist-card-img">
+                      <img src="assets/shivers.jpg">
+                    </div>
+                    <div class="playlist-card-body">
+                      <p>Shivers</p>
+                      <p>Ed Sheeran</p>
+                    </div>
+                    <div class="playlist-card-footer">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#my-playlist-neele-neele-ambar">
+                  <div class="playlist-card">
+                    <div class="playlist-card-num">
+                      <img src="assets/one (2).png">
+                    </div>
+                    <div class="playlist-card-img">
+                      <img src="assets/neele.jpg">
+                    </div>
+                    <div class="playlist-card-body">
+                      <p>Neele Neele Ambar Par</p>
+                      <p>Kishore Kumar</p>
+                    </div>
+                    <div class="playlist-card-footer">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#my-playlist-shivers">
+                  <div class="playlist-card">
+                    <div class="playlist-card-num">
+                      <img src="assets/two (2).png">
+                    </div>
+                    <div class="playlist-card-img">
+                      <img src="assets/shivers.jpg">
+                    </div>
+                    <div class="playlist-card-body">
+                      <p>Shivers</p>
+                      <p>Ed Sheeran</p>
+                    </div>
+                    <div class="playlist-card-footer">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#my-playlist-neele-neele-ambar">
+                  <div class="playlist-card">
+                    <div class="playlist-card-num">
+                      <img src="assets/one (2).png">
+                    </div>
+                    <div class="playlist-card-img">
+                      <img src="assets/neele.jpg">
+                    </div>
+                    <div class="playlist-card-body">
+                      <p>Neele Neele Ambar Par</p>
+                      <p>Kishore Kumar</p>
+                    </div>
+                    <div class="playlist-card-footer">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#my-playlist-shivers">
+                  <div class="playlist-card">
+                    <div class="playlist-card-num">
+                      <img src="assets/two (2).png">
+                    </div>
+                    <div class="playlist-card-img">
+                      <img src="assets/shivers.jpg">
+                    </div>
+                    <div class="playlist-card-body">
+                      <p>Shivers</p>
+                      <p>Ed Sheeran</p>
+                    </div>
+                    <div class="playlist-card-footer">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#my-playlist-neele-neele-ambar">
+                  <div class="playlist-card">
+                    <div class="playlist-card-num">
+                      <img src="assets/one (2).png">
+                    </div>
+                    <div class="playlist-card-img">
+                      <img src="assets/neele.jpg">
+                    </div>
+                    <div class="playlist-card-body">
+                      <p>Neele Neele Ambar Par</p>
+                      <p>Kishore Kumar</p>
+                    </div>
+                    <div class="playlist-card-footer">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#my-playlist-shivers">
+                  <div class="playlist-card">
+                    <div class="playlist-card-num">
+                      <img src="assets/two (2).png">
+                    </div>
+                    <div class="playlist-card-img">
+                      <img src="assets/shivers.jpg">
+                    </div>
+                    <div class="playlist-card-body">
+                      <p>Shivers</p>
+                      <p>Ed Sheeran</p>
+                    </div>
+                    <div class="playlist-card-footer">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </aside>
+
+      </section>
+    </main>
+    <footer>
+      <!-- will come when latest releases cards are clicked -->
+      <div id="latest-shivers" class="shivers">
+        <a href="#main-carousel">X</a>
+        <div class="footer-music-card">
+          <div class="footer-music-card-img card-img-properties">
+
+          </div>
+          <div class="footer-music-card-body">
+            <p>Shivers</p>
+            <p class="date">October 1,2021</p>
+          </div>
+        </div>
+        <audio controls>
+          <source src="songs/Shivers - Ed Sheeran_320- [MyMp3Bhojpuri.In].mp3" type="audio/mp3">
+        </audio>
+      </div>
+      <!-- will come when playlist cards are clicked for both songs respectively -->
+      <div id="my-playlist-shivers" class="shivers">
+        <a href="#latest-releases">X</a>
+        <div class="footer-music-card">
+          <div class="footer-music-card-img card-img-properties">
+
+          </div>
+          <div class="footer-music-card-body">
+            <p>Shivers</p>
+            <p class="date">October 1,2021</p>
+          </div>
+        </div>
+        <audio controls>
+          <source src="songs/Shivers - Ed Sheeran_320- [MyMp3Bhojpuri.In].mp3" type="audio/mp3">
+        </audio>
+      </div>
+      <div id="my-playlist-neele-neele-ambar" class="neele-neele-ambar">
+        <a href="#latest-releases">X</a>
+        <div class="footer-music-card">
+          <div class="footer-music-card-img card-img-properties">
+
+          </div>
+          <div class="footer-music-card-body">
+            <p>Neele Neele Ambar par</p>
+            <p class="date">October 1,2021</p>
+          </div>
+        </div>
+        <audio controls>
+          <source src="songs/08. Neele Neele Ambar Par.mp3" type="audio/mp3">
+        </audio>
+      </div>
+    </footer>
+  </section>
+</body>
+
+</html>

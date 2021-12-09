@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Playlist</title>
+        <script src="https://kit.fontawesome.com/53122cc231.js" crossorigin="anonymous"></script>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets.css">
+        <link rel="icon" href="assets/music-player-logo.png" type="image/png" sizes="any">
+      </head>
+<body style="display:flex; flex-direction: column;">
+    <header>
+        <!--nav bar-->
+        <section class="nav-bar">
+          <div class="nav-bar-left">
+            <ul>
+             
+              <li id="favourites">
+                <a href="single_playlist_screen.html">
+                  <p>Favourites</p>
+                </a>
+              </li>
+              <li >
+                <div class="search-container">
+                  <i class="fas fa-search"></i>
+                  <input type="text" name="search" placeholder="Search">
+                  <i class="fas fa-microphone"></i>
+                </div>
+              </li>
+  
+  
+  
+  
+  
+              <li id="bell">
+                <i class="far fa-bell"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-bar-right">
+            <ul>
+              <li>
+                <div class="logotext">
+                  <a href="index.html">
+  
+  
+                    <img src="assets/music-player-logo.png" id="logo">
+  
+                    <p>Music Player</p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+  
+  
+        </section>
+        
+         </header>
+
+    <main style="display:flex; flex-direction: column;">
+      <section id="caricatures">
+        <img class="user-image" src="assets/user.jpg">
+      </section>
+        <section class="containers">
+          <div class="playlist-information">
+           <div class="playlistimages">
+               <img src="assets/neele.jpg" alt="poster">
+           </div>
+           <div class="playlist-content">
+               <h2>Kishore Kumar</h2>
+               <p>Indian singer</p>
+               <p id="singer-content">
+                Kishore Kumar 4 August 1929 – 13 October 1987) was an Indian playback singer and actor.He was one of the most popular singers in the Indian film industry and from soft numbers to peppy tracks to romantic moods, Kumar sang in different genres.
+               </p>
+               <div id="button-follow">
+                   <button type="button">Play All</button>
+                   <p>Follow</p>
+               </div>
+           </div>
+          </div>
+          <aside class="aside-section">
+            <div class="section-header">
+                <h2>similar artists</h2>
+            </div>
+            <ul>
+
+                <li>
+                  <a href="#kishore-kumar-neele-neele-ambar">
+                  <div class="playlist-card">
+                    <div class="playlist-card-num">
+                      <img src="assets/one (2).png">
+                    </div>
+                    <div class="playlist-card-img">
+                      <img src="assets/neele.jpg" >
+                    </div>
+                    <div class="playlist-card-body">
+                      <p>Neele Neele Ambar Par</p>
+                      <p>Kishore Kumar</p>
+                    </div>
+                    <div class="playlist-card-footer">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#ed-sheeran-shivers">
+                  <div class="playlist-card">
+                    <div class="playlist-card-num">
+                      <img src="assets/two (2).png">
+                    </div>
+                    <div class="playlist-card-img">
+                      <img src="assets/shivers.jpg" >
+                    </div>
+                    <div class="playlist-card-body">
+                      <p>Shivers</p>
+                      <p>Ed Sheeran</p>
+                    </div>
+                    <div class="playlist-card-footer">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </div>
+                  </a>
+                </li>
+              
+               
+              </ul>
+          </aside>
+        </section>
+        <section class="containers">
+            <div class="all-playlist-songs section-properties">
+                <ul class="card-color">
+                    <li>
+                      <a href="#kishore-kumar-neele-neele-ambar">
+                      <div class="playlist-card">
+                        
+                        <div class="playlist-card-num">
+                          <img src="assets/one (2).png">
+                        </div>
+                        <div class="playlist-card-img">
+                          <img src="assets/neele.jpg" >
+                        </div>
+                        <div class="playlist-card-body">
+                          <p>Neele Neele Ambar Par</p>
+                          <p>Kishore Kumar</p>
+                        </div>
+                        <div class="playlist-card-footer">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ed-sheeran-shivers">
+                      <div class="playlist-card">
+                        <div class="playlist-card-num">
+                          <img src="assets/two (2).png">
+                        </div>
+                        <div class="playlist-card-img">
+                          <img src="assets/shivers.jpg" >
+                        </div>
+                        <div class="playlist-card-body">
+                          <p>Shivers</p>
+                          <p>Ed Sheeran</p>
+                        </div>
+                        <div class="playlist-card-footer">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                      </a>
+                      <li>
+                        <a href="#kishore-kumar-neele-neele-ambar">
+                        <div class="playlist-card">
+                          
+                          <div class="playlist-card-num">
+                            <img src="assets/one (2).png">
+                          </div>
+                          <div class="playlist-card-img">
+                            <img src="assets/neele.jpg" >
+                          </div>
+                          <div class="playlist-card-body">
+                            <p>Neele Neele Ambar Par</p>
+                            <p>Kishore Kumar</p>
+                          </div>
+                          <div class="playlist-card-footer">
+                            <i class="far fa-heart"></i>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#ed-sheeran-shivers">
+                        <div class="playlist-card">
+                          <div class="playlist-card-num">
+                            <img src="assets/two (2).png">
+                          </div>
+                          <div class="playlist-card-img">
+                            <img src="assets/shivers.jpg" >
+                          </div>
+                          <div class="playlist-card-body">
+                            <p>Shivers</p>
+                            <p>Ed Sheeran</p>
+                          </div>
+                          <div class="playlist-card-footer">
+                            <i class="far fa-heart"></i>
+                          </div>
+                        </div>
+                        </a>
+                        <li>
+                          <a href="#kishore-kumar-neele-neele-ambar">
+                          <div class="playlist-card">
+                            
+                            <div class="playlist-card-num">
+                              <img src="assets/one (2).png">
+                            </div>
+                            <div class="playlist-card-img">
+                              <img src="assets/neele.jpg" >
+                            </div>
+                            <div class="playlist-card-body">
+                              <p>Neele Neele Ambar Par</p>
+                              <p>Kishore Kumar</p>
+                            </div>
+                            <div class="playlist-card-footer">
+                              <i class="far fa-heart"></i>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#ed-sheeran-shivers">
+                          <div class="playlist-card">
+                            <div class="playlist-card-num">
+                              <img src="assets/two (2).png">
+                            </div>
+                            <div class="playlist-card-img">
+                              <img src="assets/shivers.jpg" >
+                            </div>
+                            <div class="playlist-card-body">
+                              <p>Shivers</p>
+                              <p>Ed Sheeran</p>
+                            </div>
+                            <div class="playlist-card-footer">
+                              <i class="far fa-heart"></i>
+                            </div>
+                          </div>
+                          </a>
+                          <li>
+                            <a href="#kishore-kumar-neele-neele-ambar">
+                            <div class="playlist-card">
+                              
+                              <div class="playlist-card-num">
+                                <img src="assets/one (2).png">
+                              </div>
+                              <div class="playlist-card-img">
+                                <img src="assets/neele.jpg" >
+                              </div>
+                              <div class="playlist-card-body">
+                                <p>Neele Neele Ambar Par</p>
+                                <p>Kishore Kumar</p>
+                              </div>
+                              <div class="playlist-card-footer">
+                                <i class="far fa-heart"></i>
+                              </div>
+                            </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#ed-sheeran-shivers">
+                            <div class="playlist-card">
+                              <div class="playlist-card-num">
+                                <img src="assets/two (2).png">
+                              </div>
+                              <div class="playlist-card-img">
+                                <img src="assets/shivers.jpg" >
+                              </div>
+                              <div class="playlist-card-body">
+                                <p>Shivers</p>
+                                <p>Ed Sheeran</p>
+                              </div>
+                              <div class="playlist-card-footer">
+                                <i class="far fa-heart"></i>
+                              </div>
+                            </div>
+                            </a>
+                   
+                  
+                   
+                  </ul>
+
+            </div>
+            <aside class="aside-section section-properties">
+                <div class="section-header">
+                    <h2>Recently played</h2>
+                </div>
+                 <ul>
+                  <li>
+                    <a href="#kishore-kumar-neele-neele-ambar">
+                    <div class="playlist-card">
+                      
+                      <div class="playlist-card-num">
+                        <img src="assets/one (2).png">
+                      </div>
+                      <div class="playlist-card-img">
+                        <img src="assets/neele.jpg" >
+                      </div>
+                      <div class="playlist-card-body">
+                        <p>Neele Neele Ambar Par</p>
+                        <p>Kishore Kumar</p>
+                      </div>
+                      <div class="playlist-card-footer">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#ed-sheeran-shivers">
+                    <div class="playlist-card">
+                      <div class="playlist-card-num">
+                        <img src="assets/two (2).png">
+                      </div>
+                      <div class="playlist-card-img">
+                        <img src="assets/shivers.jpg" >
+                      </div>
+                      <div class="playlist-card-body">
+                        <p>Shivers</p>
+                        <p>Ed Sheeran</p>
+                      </div>
+                      <div class="playlist-card-footer">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    </a> <li>
+                      <a href="#kishore-kumar-neele-neele-ambar">
+                      <div class="playlist-card">
+                        
+                        <div class="playlist-card-num">
+                          <img src="assets/one (2).png">
+                        </div>
+                        <div class="playlist-card-img">
+                          <img src="assets/neele.jpg" >
+                        </div>
+                        <div class="playlist-card-body">
+                          <p>Neele Neele Ambar Par</p>
+                          <p>Kishore Kumar</p>
+                        </div>
+                        <div class="playlist-card-footer">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ed-sheeran-shivers">
+                      <div class="playlist-card">
+                        <div class="playlist-card-num">
+                          <img src="assets/two (2).png">
+                        </div>
+                        <div class="playlist-card-img">
+                          <img src="assets/shivers.jpg" >
+                        </div>
+                        <div class="playlist-card-body">
+                          <p>Shivers</p>
+                          <p>Ed Sheeran</p>
+                        </div>
+                        <div class="playlist-card-footer">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                      </a> <li>
+                        <a href="#kishore-kumar-neele-neele-ambar">
+                        <div class="playlist-card">
+                          
+                          <div class="playlist-card-num">
+                            <img src="assets/one (2).png">
+                          </div>
+                          <div class="playlist-card-img">
+                            <img src="assets/neele.jpg" >
+                          </div>
+                          <div class="playlist-card-body">
+                            <p>Neele Neele Ambar Par</p>
+                            <p>Kishore Kumar</p>
+                          </div>
+                          <div class="playlist-card-footer">
+                            <i class="far fa-heart"></i>
+                          </div>
+                        </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#ed-sheeran-shivers">
+                        <div class="playlist-card">
+                          <div class="playlist-card-num">
+                            <img src="assets/two (2).png">
+                          </div>
+                          <div class="playlist-card-img">
+                            <img src="assets/shivers.jpg" >
+                          </div>
+                          <div class="playlist-card-body">
+                            <p>Shivers</p>
+                            <p>Ed Sheeran</p>
+                          </div>
+                          <div class="playlist-card-footer">
+                            <i class="far fa-heart"></i>
+                          </div>
+                        </div>
+                        </a>
+               
+              </ul>
+            </aside>
+        </section>
+    </main>   
+    <footer>
+
+      <!-- will come when song selected is shivers -->
+      <div id="ed-sheeran-shivers" class="shivers">
+        <a href="#">X</a>
+        <div class="footer-music-card">
+          <div class="footer-music-card-img card-img-properties">
+
+          </div>
+          <div class="footer-music-card-body">
+            <p>Shivers</p>
+            <p class="date">October 1,2021</p>
+          </div>
+        </div>
+        <audio controls>
+          <source src="songs/Shivers - Ed Sheeran_320- [MyMp3Bhojpuri.In].mp3" type="audio/mp3">
+        </audio>
+      </div>
+      <!-- will come when song selected is neele neele ambar par -->
+      <div id="kishore-kumar-neele-neele-ambar" class="neele-neele-ambar">
+        <a href="#">X</a>
+        <div class="footer-music-card">
+          <div class="footer-music-card-img card-img-properties">
+
+          </div>
+          <div class="footer-music-card-body">
+            <p>Neele Neele Ambar par</p>
+            <p class="date">October 1,2021</p>
+          </div>
+        </div>
+        <audio controls >
+          <source src="songs/08. Neele Neele Ambar Par.mp3" type="audio/mp3">
+        </audio>
+      </div>
+    </footer>  
+</body>
+</html>

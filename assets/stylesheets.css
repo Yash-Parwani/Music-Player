@@ -1,0 +1,744 @@
+html{
+    padding: 0px;
+    margin:0px;
+}
+/* styles for body */
+body{
+    background-color:#0c1027;
+    color:white;
+    display:flex;
+  
+   height:210%;
+
+}
+footer{
+    height:4vh;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+/* hovering properties grouping */
+.playlist-card:hover,.cards:hover,.artist-container:hover,.music-card:hover{
+    box-shadow: 5px 10px 18px rgb(255, 153, 0);
+    
+}
+
+/* setting inline display for song section and aside queue section */
+
+/* styles for section headers */
+.section-header{
+    text-transform: capitalize;
+}
+#songs-display,#queue-section,#caricatures{
+  
+    height:auto;
+}
+
+/* common section properties */
+.section-properties{
+    
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: space-around;
+    align-items: center;
+    width:70vw;
+    height:auto;
+    
+}
+
+.horizontal-list li{
+    
+    display: inline-block;
+  
+    text-decoration: none;
+    list-style: none;
+}
+/* songs display styling */
+
+#songs-display{
+   
+    width:70vw;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+}
+/* nav-bar styling */
+
+#bell{
+    margin-top: 2.5%;
+}
+#logo{
+   
+    width:4vw;
+    height:6vh;
+}
+.nav-bar{
+  
+    height:7vh;
+    display: flex;
+    align-items: flex-start;
+
+   
+}
+/* left nav-bar styling */
+.nav-bar-left{
+    height:inherit;
+    display:flex;
+    align-items: center;
+    width:55vw;
+}
+.nav-bar-left ul{
+    height: inherit;
+    margin:0px;
+    display: flex;
+    padding:0px;
+}
+#favourites{
+   display: flex;
+   align-items: center;
+   
+}
+
+.nav-bar-left ul li{
+ 
+    width:16vw;
+    justify-content: center;
+    align-items: center;
+   
+    list-style: none;
+    
+}
+.logotext a{
+   
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    
+  
+
+}
+.logotext p{
+    display: flex;
+    align-items: center;
+}
+/* right nav bar styling */
+.nav-bar-right{
+    width:40vw;
+    
+
+}
+.nav-bar-right ul{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-bar-right ul li{
+    list-style: none;
+}
+.user-image{
+    width:3.5vw;
+    height:6.5vh;
+    border-radius: 50%;
+}
+.search-container i{
+    color:black;
+    border:0px;
+}
+.search-container{
+
+    width:15vw;
+
+    margin-top:7%;
+    background-color: white;
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-around;
+    
+}
+.search-container input{
+    border:0px;
+  
+
+    border-radius: 20px;
+}
+
+/* carousel */
+
+#main-carousel-list{
+    margin-top:5%;
+    margin-bottom: 3%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+/* on hovering the images get bigger */
+#main-carousel-list img:hover{
+    transition: 1s ease-in-out 0.005s;
+    transform: scale(1.5);
+}
+.main-carousel-img{
+    width:25vw;
+    height:30vh;
+    border-radius: 7.5%;
+}
+/* caricatures section */
+#caricatures{
+    width:4vw;
+ 
+}
+#caricatures img{
+    bottom:0%;
+    position: fixed;
+}
+/* latest releases section */
+
+/* stylizing music cards */
+.music-display-container{
+    display:flex;
+    justify-content: space-around;
+   
+    width:65vw;
+    flex-wrap:wrap;
+    position: relative;
+
+}
+.music-card{
+   
+    display: flex;
+    margin-bottom: 3%;
+    
+    height: 150px;;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 450px;
+    position: relative;
+   
+}
+.music-card-img{
+   
+    background-image: url("shivers.jpg");
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:15vh;
+    width:7.5vw;
+    border-radius:5%;
+   
+    position:relative;
+}
+.playbutton-container a{
+  
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-button {
+    margin:0px;
+    position:absolute;
+    opacity:0;
+    color: lightgrey;
+}
+.music-card-img:hover{
+   opacity: 0.7;
+}
+.music-card-img:hover .play-button{
+    opacity: 1.0;
+}
+
+.music-card-body p{
+    margin:10%;
+}
+
+.date{
+    color:grey;
+}
+/* songs options dropdown */
+.songs-options i{
+    position: absolute;
+    right:2.5%;
+}
+.options ul{
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height:10vh;
+}
+.options li{
+    margin:0px;
+    list-style: none;
+    
+}
+.options li span,.options li a{
+    color:white;
+    
+}
+
+.options {
+
+    background-color: #1a1e33;
+    height: 0px;
+    width:0px;
+    overflow: hidden;
+    z-index:2;
+}  
+
+
+#options-1:target,#options-2:target,#options-3:target,#options-4:target{
+   transition:0.5s ease-in-out 0.25s;
+    display:block;
+    background-color:#1a1e33;
+   
+    height: 125px;
+    width:100px;
+    position:absolute;
+    left:101%;
+   
+}
+
+  
+/* artist section */
+
+#popular-artists-bg{
+
+    display:flex;
+    width:70vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  
+}
+.artists-image{
+    width:5vw;
+    height:10vh;
+    border-radius: 50%;
+    
+}
+.artist-container{
+   
+    
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width:10vw;
+    height:auto;
+   
+}
+
+/* genre section */
+.genre-bg-properties{
+    padding:0px;
+
+    width:70vw;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.genre-carousel-card{
+    margin-top: 1%;
+    width:20vw;
+    height:25vh;
+    overflow: hidden;
+}
+.genre-carousel-img{
+    width:20vw;
+    height:25vh;
+
+    border-radius: 7.5%;
+}
+.genre-carousel-img:hover{
+    transition: 1s ease-in-out 0.005s;
+    transform: scale(1.5);
+}
+.genre-carousel-card:hover{
+    opacity:0.7;
+}
+.genre-image  {
+    width:5vw;
+    
+    position: relative;
+}
+.image-text{
+    position:absolute;
+    top:20%;
+    left:30%;
+    color:black;
+
+   
+}
+.genre-image img{
+    width:5vw;
+    height:10vh;
+    border-radius: 50%;
+
+}
+/* desi-hits  and angrezi beats*/
+.cards{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.cards-display{
+   display: flex;
+   flex-wrap: wrap;
+   width: inherit;
+   
+   justify-content: space-around;
+}
+.card-image img{
+   height:20vh;
+   width:10vw;
+   border-radius: 10%;
+
+}
+.cards-body{
+    margin:0px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+/* queue and aside section */
+#queue-section{
+    width:23vw;
+    height:auto;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+}
+#queue
+{height:150vh;
+    display: flex;
+
+     width:22.5vw;
+    flex-direction: column;
+   
+    align-items: center;
+}
+
+ 
+.playlist{
+
+   height:130vh;
+    width: 22.4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playlist ul{
+    
+    padding:0px;
+}
+.playlist-card{
+    width:21.4vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.playlist ul{
+    list-style: none;
+    text-decoration: none;
+}
+.playlist-card-footer,
+    .playlist-card-num{
+   
+    display: flex;
+    align-items: center;
+}
+.playlist-card-img img{
+  
+    height:10vh;
+    width:5vw;
+    border-radius:10% ;
+}
+.playlist-card-body{
+    
+    width:40%
+}
+.playlist-card-img,.playlist-card-footer,.playlist-card-body{
+    margin-left:5%;
+}
+/* audio stylings */
+
+audio::-webkit-media-controls-panel{
+    border:0px;
+    background-color:#282828;
+}
+
+/* footer-section */
+.shivers,.neele-neele-ambar{
+  
+    position:fixed;
+    bottom:0vh;
+    height:7.5vh;
+    width:100%;
+    display:none;
+    background-color:#282828;
+
+
+}
+.shivers audio{
+    margin-left: 18%;
+}
+.footer-music-card{
+   
+    width:350px;
+    display: flex;
+   
+    
+}
+.footer-music-card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-music-card-body p{
+    margin:0px;
+    margin-left: 20%;;
+}
+.card-img-properties{
+    margin-left: 10%;
+    width:15%;
+    background-size: cover;
+    border-radius:10%;
+}
+#latest-shivers .footer-music-card-img,#my-playlist-shivers .footer-music-card-img{
+    background-image: url("shivers.jpg");
+}
+#my-playlist-neele-neele-ambar .footer-music-card-img{
+    
+    background-image:url("neele.jpg");
+   
+}
+/* group nesting to display respective songs when clicked */
+#latest-shivers:target,#my-playlist-neele-neele-ambar:target,#my-playlist-shivers:target,#ed-sheeran-shivers:target,#kishore-kumar-neele-neele-ambar:target{
+    display:flex;
+    
+}
+
+/* single play list screen begins */
+/* genral styling properties */
+.containers{
+    height:auto;
+    margin-top:3%;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+.playlist-information,.all-playlist-songs{
+    width:50vw;
+}
+.aside-section{
+
+    width:30vw;
+    
+}
+
+/* playlist-information */
+.playlistimages img{
+    width:16vw;
+    height:32vh;
+    border-radius:5%;
+}
+.playlist-information{
+    background-color:#141b41;
+    display:flex;
+    justify-content: space-between;
+
+}
+#singer-content{
+    height:auto;
+}
+.playlist-content{
+    
+    width:33vw;
+}
+#button-follow{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#button-follow button{
+    border:0px;
+    background-image:linear-gradient(to right,#3e26b2,#be47dd)
+}
+.card-color .playlist-card{
+    background-color: #1a1e33;
+}
+.card-color{
+
+    padding-left: 0px;
+    
+}
+
+.aside-section li,.all-playlist-songs li{
+    list-style: none;
+}
+.all-playlist-songs ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.all-playlist-songs .playlist-card{
+    width:50vw;
+    margin-bottom: 10px;
+}
+.aside-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-music-card{
+    height:auto;
+}
+#ed-sheeran-shivers .footer-music-card-img{
+    background-image: url("shivers.jpg");
+}
+#kishore-kumar-neele-neele-ambar .footer-music-card-img{
+    background-image: url("neele.jpg");
+}
+#kishore-kumar-neele-neele-ambar audio{
+    margin-left:17%;
+}
+
+
+/* adding responsiveness using media-queries */
+@media screen and (max-width:1280px) {
+    .main-carousel-img{
+        height:300px;
+        width:350px;
+    }
+    .music-card-img{
+        width:12vw;
+        height:19vh;
+    }
+    .music-card{
+        
+        height:150px;
+        width:350px;
+    }
+    
+    .artist-container{
+        height:250px;
+        width:250px;
+        
+       
+    }
+    
+    .artists-image{
+        width:10vw;
+        height:15vh;
+    }
+    .genre-image img{
+        
+        height:12vh;
+        width:7.5vw;
+    }
+    .genre-carousel-card{
+        height:30vh;
+        width:20vw;
+        
+    }
+    .genre-carousel-img{
+     
+        
+        height:30vh;
+        width:20vw;
+    }
+    .cards{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height:55vh;
+        width:25vw;
+    }
+    .card-image img{
+        height:28vh;
+        width:20vw;
+    }
+    .playlist-card{
+        height:15vh;
+    }
+    .card-image{
+        height:10vh;
+        width:20vw;
+    }
+    .card-img-properties{
+        height:40vh;
+        width:20vw;
+    }
+    .search-container{
+        width:250px;
+    }
+    .playlist-card-img{
+        
+        width:100px;
+    }
+    .playlist-card-img img{
+        width:100px;
+        height:inherit;
+    }
+    .user-image{
+        width:50px;
+    }
+
+}
+@media screen and (max-width:1080px){
+    .playlistimages{
+        
+        height:auto;
+        
+    }
+    .playlist-information{
+        height:auto;
+        align-items: center;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+    .playlistimages img{
+        width:300px;
+        height:300px;
+    }
+}
+@media screen and (max-width:720px){
+    .playlistimages{
+      
+        height:auto;
+        
+    }
+    .playlistimages img{
+        
+        width:200px;
+        height:200px;
+    }
+    .playlist-card{
+        width:230px;
+    }
+    .music-card-img{
+        border:2px solid white;
+        width:150px;
+        height:150px;
+        border-wi
+    }
+}
